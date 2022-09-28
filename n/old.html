@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    nav{
+   height: 60px;
+        background-color: aqua;
+align-items: center;
+align-content: center;
+    }
+nav *{
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav div div{
+     align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+}
+#grey{
+      background-color: grey;
+        color: aliceblue;
+         /* margin: auto;
+           align-content: auto;
+            align-self: auto;
+            align-items: flex-end; */
+            /* background-image: url("https://th.bing.com/th?q=Grey+and+White+Patterned+Background&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247"); */
+           
+}
+#grey>div { 
+  
+  
+    display: flex;
+    /* text-align: justify; */
+    text-align: center; 
+    justify-content: space-between;
+  
+   
+    /* grid-template-columns: repeat(1,1); */
+    /* grid-template-rows: repeat(1,1); */
+   margin: 0 10px 0 10px ;
+}
+img{
+    width: 200px;
+    border-radius: 10% 40% 10% 40%;
+    margin-top: 10px;
+}
+/* a{ */
+    /* text-decoration: none; */
+    /* border-radius: 50%; */
+    /* padding: 10px; */
+/* } */
+h2{
+    text-align: center;
+    color: blue;
+    margin: 10px 0 10px 0;
+}
+h2~p{
+    color: azure;
+    text-align: center;
+    margin: 0 20px 25px 20px ;
+}
+#pink{
+    /* background-image: "https://th.bing.com/th?q=Grey+and+White+Polka+Dot+Background&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247"; */
+    background-image: url("https://th.bing.com/th?q=Grey+and+White+Polka+Dot+Background&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247");
+    padding: 20px;
+}
+#pink>div{
+    
+    display: grid;
+    /* text-align: justify; */
+grid-template-columns: repeat(3,1fr);
+    text-align: center; 
+    justify-content: space-between;
+  
+   
+    /* grid-template-columns: repeat(1,1); */
+    /* grid-template-rows: repeat(1,1); */
+   margin: 0 10px 0 10px ;
+}
+#pink img{
+    width: 80px;
+    height: 80px;
+    border-radius: 0% 0% 0% 0%;
+    margin-top: 10px;
+}
+#sky{
+    padding: 20px;
+    /* padding: 20px; */
+   background-image: url("https://th.bing.com/th/id/OIP.bLct39MMtFS6Vl0itJt-zQHaE7?w=280&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+}
+
+#p>div{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    /* border: 1px dotted black; */
+    /* border-style: ridge; */
+    /* box-shadow:2px solid yellowgreen; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 80%;
+    border-radius: 5% 5%;
+    margin-bottom: 15px;
+    padding: 10px;
+     background-color: antiquewhite;
+}
+#p>div img{
+     width: 100%;
+    border-radius: 0% 0% 0% 0%;
+    margin-top: 30px;
+}
+#p h2{
+    color: blueviolet;
+}
+#black{
+   background-image: url("https://www.bing.com/th?id=OIP.D-M6B3kcMYzoJAkJxjPYYQHaEK&w=202&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2");
+   /* image-resolution: inherit; */
+    display: flex;
+color: aliceblue;
+padding: 15px;
+justify-content: space-around;
+}
+#black img{
+     width: 100px;
+     height: 100px;
+     border-radius: 10%;
+    /* border-radius: 0% 0% 0% 0%; */
+    margin-top: 30px;
+}
+@media all and (min-width: 600px) {
+ nav~div{
+    padding: 60px;
+ }
+    nav~div h2~p{
+        padding: 0 50px;
+    }
+    #p{
+        display: flex;
+        padding: 15px;
+    }
+    #p>div{
+        margin: 10px;
+    }
+    #pink img{
+    width: 120px;
+    height: 100px;
+    border-radius: 0% 0% 0% 0%;
+    margin-top: 10px;
+}
+}
+@media all and (max-width: 400px) {
+ nav~div{
+    padding: 60px;
+ }
+    nav~div h2~p{
+        padding: 0 50px;
+    }
+    #p{
+        display: flex;
+        padding: 15px;
+    }
+    #p>div{
+        margin: 7px;
+    }
+    #pink img{
+    width: 60px;
+    height: 60px;
+    border-radius: 0% 0% 0% 0%;
+    margin-top: 10px;
+}
+a{
+    padding: 1px;
+    border: none;
+}
+#grey{
+    background-color: white;
+}
+#grey *{
+    color: black;
+}
+}
+/* nav~div{
+    padding: 30px;
+} */
+nav img{
+ width: 60px; 
+ border-radius: 50%;  
+ margin-left:15px;
+
+}
+body a{
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+}
+.skill a{
+ border: 0px solid grey;
+    border-radius: 2px;
+    background-color:none;
+     margin-bottom: 25px;
+}
+
+</Style>
+<body>
+
+    <nav>
+        <div>
+            
+        </div>
+        <div>
+      <img src="https://i.ibb.co/7CrMTqg/arun-pic.jpg" alt="arun-pic" border="0">
+            <div class="skill"><a href="">  Skill</a></div>
+            <div class="skill"><a href=""> Projects</a></div>
+            <div class="skill"><a href=""> Contact</a></div>
+        </div>
+    </nav>
+
+
+    <div id="grey">
+<div>
+    <div>
+ <h4>Hi  I  Am</h4>
+    <h1 style="color: red" >ARUN KUMAR</h1>
+    <h5>I am from Fazilka,Punjab.</h5>
+
+<h5>I am a backend web Developer with problem solving and analyzing skills</h5>
+<!-- <link rel="stylesheet" href="./resume.html">   -->
+<a href="https://drive.google.com/file/d/1KJOKo4uVFMZeBHLHeHH4ab1zzI4Wio8Y/view?usp=sharing" style="color: rgb(28, 42, 231) ; background-color : rgb(179, 231, 179); font-size: larger;">Resume</a>
+</div>
+    <div>
+        <!-- <img src="https://drive.google.com/file/d/1gu0R3_Hg8Bob3Ttm_SzY059h8dwGNMNY/view?usp=sharing" alt="pic not found">
+        <img src="https://drive.google.com/drive/folders/1uI-RejeAKmarCbzh4eZShDA0iHBx11C5?usp=sharing" alt="hi">
+        <img src="https://drive.google.com/file/d/19PC99FtQk8UOoZ1GqMYrb5KYn1of_eld/view?usp=sharing" alt="p2">
+        <img src="https://photos.google.com/photo/AF1QipPJO8NrBj5GbGJSrlmRvJhh9xiErQ9nOJlbaRCI" alt="3">
+        <img src="https://twitter.com/Arun15031503/photo" alt="2">
+        <img src="https://imgur.com/UzKWeZm" alt=""> -->
+        <!-- <blockquote class="imgur-embed-pub" lang="en" data-id="UzKWeZm"><a href="https://imgur.com/UzKWeZm">View post on imgur.com</a></blockquote> -->
+        <!-- <img src="https://imgur.com/UzKWeZm" alt="">
+        <img src="https://ibb.co/Pj1XbdT" alt="2"> -->
+      <img src="https://i.ibb.co/7CrMTqg/arun-pic.jpg" alt="arun-pic" border="0">
+      <!-- <img src="https://drive.google.com/file/d/1gu0R3_Hg8Bob3Ttm_SzY059h8dwGNMNY/view?usp=sharing" alt="22552"> -->
+    </div>
+</div>
+
+<h2>About Me</h2>
+<p>I have worked on several different projects collaboratively and solely. I am a self-driven and passionate web developer skilled in JavaScript and Java. 
+    Gone through 30 weeks of coding Bootcamp at Masai School.
+     Always eager to learn new technologies to enhance my skills and bring value to the organization.</p>
+
+
+    </div>
+<div id="pink">
+
+    <h2>Skills</h2>
+    <div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.eTCbdR_AFzbqHMPXhrJWUQHaEK?w=321&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+            <!-- <p>HTML</p> -->
+        </div>
+        
+       <div>
+            <img src="https://th.bing.com/th/id/OIP.YOCip_NyZTIVxn-1USdz_AHaER?w=294&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+            <!-- <p>HTML</p>/ -->
+        </div>
+         <div>
+            <img src="https://th.bing.com/th/id/OIP.XZYXH15xVUAZ7ygqPYFV9wAAAA?w=119&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+            <!-- <p>HTML</p> -->
+        </div>
+            <div>
+            <img src="https://th.bing.com/th/id/OIP.ASQc6gawlqyQRhkENTvWiAHaEo?w=289&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+            <!-- <p>HTML</p> -->
+        </div>
+        
+       <div>
+            <img src="https://th.bing.com/th/id/OIP.82tJboy2Fv9NACXpmKLzuAHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+            <!-- <p>HTML</p> -->
+        </div>
+   <div>
+    <img src="https://th.bing.com/th/id/OIP.D-RNU-U-dbM_WOdaJoGo3QHaFR?w=264&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+   </div>
+    </div>
+</div>
+   
+<div id="sky">
+
+    <h2>Projects</h2>
+<div id="p">
+
+ <div>
+    <div>
+        <h2>Myntra </h2>
+        <h5>Myntra is an online plateform for shopping of clothes, shoes and more items for both men ans women.</h5>
+        <a href="https://github.com/arun5G/myntra">View Project Code</a>
+        <a href="https://luminous-cocada-0f0885.netlify.app/">View Website</a>
+        <h6>2022</h6>
+    </div>
+    <div>
+        <img src="https://th.bing.com/th/id/OIP.9FxfyLaaET7PDAW5AbsKbAHaEX?w=286&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+    </div>
+ </div>
+ <div>
+    <div>
+        <h2>Anthropologie </h2>
+        <h5>Anthropologie is an online plateform for shopping of garments and more items online for both men ans women.</h5>
+        <a href="https://github.com/arun5G/anthropologie">View Project Code</a>
+        <a href="https://wonderful-malasada-e63214.netlify.app/">View Website</a>
+        <h6>2022</h6>
+    </div>
+    <div>
+        <img src="https://th.bing.com/th/id/OIP.lzLtIAMQIzXPR3zEIKdqVwHaGy?w=182&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+    </div>
+ </div>
+</div>
+
+
+
+</div>
+
+<div id="black">
+    <div>
+        <h1>Contact Me</h1>
+        <h4>arunkumar15031503@gmail.com</h4>
+        <h4>+919815087157</h4>
+        <h4>whatsapp me on</h4>
+        <h4>9815087157</h4>
+    </div>
+    <div>
+        <a href="https://github.com/arun5G">
+            <img src="https://th.bing.com/th/id/OIP.0QgVFOcgwnxQ5hXPtopLPwHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/arun-kumar-47aa1619a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMQ3KRG%2BGQym0Z3ge2%2FdsSA%3D%3D">
+            <img src="https://th.bing.com/th/id/OIP.lLNJ5koOfy_uV2jQp5MbggHaHa?w=184&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        </a>
+        <a href="https://twitter.com/Arun15031503">
+            <img src="https://th.bing.com/th/id/OIP.Mb_gGGawG2GtlX542l1poQHaGl?w=159&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        </a>
+
+    </div>
+
+
+
+
+
+</div>
+</body>
+</html>
+<!-- Task 1 - Day 1 (09/09/2022)
+Decide and Create the responsive-layout for your portfolio, for three different screen sizes: Desktop, Tablet, and Mobile
+
+
+Task 2 - Day 1 (09/09/2022)
+Decide on the color scheme for your portfolio
+Decide on at-least 3 colors
+
+ -->
